@@ -1,0 +1,10 @@
+
+## 🚀 **Step 8: Deploy Your Site**
+
+### **Option A: Using Terminal/Command Line**
+
+1. **Make changes** to your files
+2. **Add and commit** changes:
+   ```bash
+   git add .
+   git commit -m "Updated portfolio with new projects"
