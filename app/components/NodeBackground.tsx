@@ -16,7 +16,7 @@ export default function NodeBackground() {
 
     async function init() {
       // Dynamic import — Three.js is code-split and lazy loaded
-      THREE = (await import('three')).default ?? await import('three');
+      THREE = await import('three');
 
       const canvas = canvasRef.current;
       if (!canvas) return;
