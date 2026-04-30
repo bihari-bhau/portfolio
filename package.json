@@ -1,0 +1,29 @@
+{
+  "name": "shubham-singh-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.105.4",
+    "@react-three/fiber": "^8.16.8",
+    "framer-motion": "^11.2.10",
+    "next": "^16.2.4",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "three": "^0.165.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/three": "^0.165.0",
+    "eslint": "^8",
+    "eslint-config-next": "^16.2.4",
+    "typescript": "^5"
+  }
+}

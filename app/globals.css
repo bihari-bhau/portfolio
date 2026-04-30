@@ -1,0 +1,104 @@
+/* ============================================================
+   NEURAL BLUEPRINT — globals.css
+   Shubham Singh Portfolio v3.0 (Next.js)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:       #020d1a;
+  --navy2:      #050f20;
+  --navy3:      #071526;
+  --cyan:       #00e5ff;
+  --cyan-dim:   #00b8cc;
+  --cyan-glow:  rgba(0,229,255,0.15);
+  --cyan-faint: rgba(0,229,255,0.06);
+  --white:      #e8f4f8;
+  --muted:      #4a7a8a;
+  --muted2:     #2a4a5a;
+  --border:     rgba(0,229,255,0.18);
+  --border2:    rgba(0,229,255,0.08);
+  --mono:       'JetBrains Mono', 'Courier New', monospace;
+  --display:    'Orbitron', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--navy);
+  color: var(--white);
+  font-family: var(--mono);
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Hide default cursor everywhere */
+*, *::before, *::after { cursor: none !important; }
+
+/* SCANLINES */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 3px,
+    rgba(0,0,0,0.08) 3px, rgba(0,0,0,0.08) 4px
+  );
+  pointer-events: none;
+  animation: scanmove 8s linear infinite;
+}
+
+@keyframes scanmove {
+  0%   { background-position: 0 0; }
+  100% { background-position: 0 80px; }
+}
+
+/* SECTION */
+section {
+  position: relative;
+  z-index: 10;
+  padding: 6rem 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--cyan); opacity: 0.4; }
+
+/* SELECTION */
+::selection { background: var(--cyan); color: var(--navy); }
+
+/* TYPOGRAPHY UTILS */
+.section-tag {
+  font-size: 0.63rem;
+  letter-spacing: 0.2em;
+  color: var(--cyan);
+  opacity: 0.6;
+  margin-bottom: 0.4rem;
+  font-family: var(--mono);
+}
+
+.section-title {
+  font-family: var(--display);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.08em;
+  margin-bottom: 3rem;
+  text-transform: lowercase;
+}
+
+/* RESPONSIVE */
+@media (max-width: 960px) {
+  section { padding: 4rem 1.5rem; }
+}
+@media (max-width: 600px) {
+  section { padding: 4rem 1.25rem; }
+}
