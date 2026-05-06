@@ -105,6 +105,20 @@ export const experience = [
       'Agile workflows: Git version control, debugging, code review, iterative development',
     ],
   },
+  {
+    company: 'BIPARD',
+    role: 'CCNA Trainee',
+    location: 'Patna, On-site',
+    period: 'June 2025 — August 2025',
+    active: false,
+    summary:
+      'Trained in CCNA (Cisco Certified Network Associate) to build a strong foundation in networking and cybersecurity.',
+    bullets: [
+      'Completed a comprehensive CCNA training program covering network fundamentals, routing protocols, and security concepts',
+      'Gained hands-on experience with Cisco networking devices and protocols',
+      'Prepared for the CCNA certification exam and passed with flying colors',
+    ],
+  },
 ];
 
 export const projects = [
@@ -173,8 +187,9 @@ export const education = [
 ];
 
 export const certifications = [
-  'Java Full Stack Development',
-  'PCAP – Python Certified Associate',
-  'Google Data Analytics',
-  'Cisco Cybersecurity',
+  { label: 'Java Full Stack Development', href: 'https://www.yourcertification.com' },
+  { label: 'PCAP – Python Certified Associate', href: 'https://drive.google.com/file/d/1YYEeULCTBjSIhsodsOjSegzuIFs5m5CQ/view?usp=sharing' },
+  { label: 'Google Data Analytics', href: 'https://drive.google.com/file/d/1-hMl9arFbEPAx_e6SMWE7Ez9a2a8Yg6c/view?usp=sharing' },
+  { label: 'Cisco Cybersecurity', href: 'https://drive.google.com/file/d/1D5xAn3TQyKyXeEaAesvO1yNnV8A82bIt/view?usp=sharing' },
+  { label: 'CCNA – Cisco Certified Network Associate', href: 'https://drive.google.com/drive/folders/1slvZNueNIbZu3GzCsxabxQ0vj09QmTeX?usp=drive_link' },
 ];
